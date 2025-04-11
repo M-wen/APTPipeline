@@ -20,7 +20,7 @@ APT<-rownames(seurat_data)[which(str_detect(rownames(seurat_data),"APT"))]
 expr<-seurat_data[APT,]
 
 expr2<-t(as.data.frame(expr))
-write.table(expr2,file =paste(args[2],args[3],"_count.csv",sep=""),row.names=T,sep="\t",quote=F)
+write.table(expr2,file =paste(args[2],"_count.csv",sep=""),row.names=T,sep="\t",quote=F)
 
 
 
